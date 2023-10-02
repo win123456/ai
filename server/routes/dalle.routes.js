@@ -30,7 +30,7 @@ router.route('/').post(async(req,res) => {
         });
 
         const image = response.data[0].b64_json
-
+        
         res.status(200).json({photo: image});
     }catch (error){
         console.error(error);
